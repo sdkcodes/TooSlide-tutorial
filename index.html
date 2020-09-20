@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test carousel</title>
+    <link rel="stylesheet" href="tooSlide.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sliderContainer">
+            <div class="singleSlide"><img src="slide1.jpg" alt="slide1" class="slideImage"></div>
+            <div class="singleSlide"><img src="slide2.jpg" alt="slide2" class="slideImage"></div>
+            <div class="singleSlide"><img src="slide3.jpg" alt="slide3" class="slideImage"></div>
+            <div class="singleSlide"><img src="slide4.jpg" alt="slide4" class="slideImage"></div>
+        </div>
+    </div>
+    <script src="tooSlide.js"></script>
+    <script>
+        var slider = new TooSlides({
+            slidesClass: ".singleSlide",
+            container: ".sliderContainer",
+            nextButton: ".next",
+            previousButton: ".prev"
+        })
+        // var slider = new TooSlides();
+        // slider.init();
+        
+    </script>
+</body>
+</html>
